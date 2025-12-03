@@ -21,6 +21,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Models\Produit;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Auth;
@@ -354,5 +355,10 @@ Route::post('/admin/users/{user}/permissions', [PermissionController::class, 'up
     Route::get('/mes-favoris', [FavoriteController::class, 'index'])->middleware('auth');
     Route::post('/favorites', [FavoriteController::class, 'store'])->middleware('auth');
     Route::delete('/favorites/{id}', [FavoriteController::class, 'destroy'])->name('favorites.destroy');
+
+// ================================================================
+// 13. Vérification des emails
+// ================================================================
+
 
 require __DIR__.'/auth.php';
