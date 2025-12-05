@@ -1,0 +1,1 @@
+Ici ma creation de compte, mot de passe oublie, reinitialization de mot de passe sont fonctionnelle, le nom et l'icon du site sur mon navigatuer son deja bien affiche depuis mon navigateur et les reste adapte a mes attentes
